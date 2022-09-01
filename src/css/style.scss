@@ -1,0 +1,49 @@
+@import "../fonts/Museo/style.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+}
+
+$museo700 : 'Museo Sans Rounded 700', sans-serif;
+$museo300 : 'Museo Sans Rounded 300', sans-serif;
+
+@mixin text ($ff, $fx, $lh, $c) {
+  font-family: $ff;
+  font-size: $fx;
+  line-height: $lh;
+  color: $c;
+}
+
+@import "btn";
+@import "header";
+@import "home";
+@import "map";
+@import "products";
+@import "info";
+@import "question";
+@import "overlay";
+
+
+//брейкпоинты
+//@media (max-width: 1200px) {
+//
+//}

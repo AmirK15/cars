@@ -1,0 +1,49 @@
+.questions {
+  padding: 100px 0;
+
+  &__title {
+    @include text($museo700, 35px, 96.5%, #0F0F10);
+    margin-bottom: 70px;
+  }
+
+  &__accordion {
+    padding: 28px 164px 22px 40px;
+    background: #FFFFFF;
+    box-shadow: 0 5px 48px rgba(49, 47, 47, 0.1);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    &_active {
+      .questions__accordion-desc {
+        display: block;
+      }
+      .questions__accordion-title {
+        color: #18DC6D;
+      }
+      .questions__accordion-action {
+        transform: rotate(180deg);
+      }
+    }
+    &-title {
+      @include text($museo700, 20px, 96.5%, #0F0F10);
+    }
+    &-desc {
+      margin-top: 13px;
+      @include text($museo300, 15px, 18px, #0F0F10);
+      display: none;
+    }
+    &-action {
+      position: absolute;
+      top: 14px;
+      right: 33px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #18DC6D;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}

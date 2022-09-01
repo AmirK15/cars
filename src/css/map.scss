@@ -1,0 +1,7 @@
+.map {
+  padding: 96px 0;
+  &__title {
+    @include text($museo700, 35px, 96.5%, #0F0F10);
+    margin-bottom: 70px;
+  }
+}
